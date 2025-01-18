@@ -28,6 +28,13 @@ class Restaurant(db.Model, SerializerMixin):
     # add relationship
     pizzas = db.relationship('Pizza', secondary=restaurant_pizza, back_populates='restaurants', cascade='all, delete-orphan')
     # add serialization rules
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "address": self.address,
+            "restaurant_pizzas": [rp.to_dict() for rp in self.restaurant_pizzas]
+        }
 
     def __repr__(self):
         return f"<Restaurant {self.name}>"
