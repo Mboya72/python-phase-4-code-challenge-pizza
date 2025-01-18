@@ -12,6 +12,11 @@ metadata = MetaData(
 
 db = SQLAlchemy(metadata=metadata)
 
+restaurant_pizza = db.Table('restaurant_pizza',
+    db.Column('restaurant_id', db.Integer, db.ForeignKey('restaurants.id'), primary_key=True),
+    db.Column('pizza_id', db.Integer, db.ForeignKey('pizzas.id'), primary_key=True),
+    db.Column('price', db.Float, nullable=False)
+)
 
 class Restaurant(db.Model, SerializerMixin):
     __tablename__ = "restaurants"
