@@ -218,6 +218,6 @@ flask db upgrade
 Contributions are welcome! If you would like to contribute to this project, please fork the repository and create a pull request with your changes.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 This README structure provides a thorough explanation of how to set up, use, and understand the SQLAlchemy models in the context of a Flask application.
