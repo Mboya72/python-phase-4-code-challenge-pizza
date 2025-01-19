@@ -1,4 +1,4 @@
-# Flask SQLAlchemy Models README
+# Flask SQLAlchemy Models
 This README provides an overview of the SQLAlchemy models used for a restaurant and pizza application. The application is built using Flask and SQLAlchemy and includes models for restaurants, pizzas, and the relationships between them.
 
 ## Installation
