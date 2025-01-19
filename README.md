@@ -16,7 +16,7 @@ You can install the necessary dependencies using pip:
 
 pip install Flask Flask-SQLAlchemy SQLAlchemy sqlalchemy-serializer
 
-Models Overview
+### Models Overview
 
 This application uses SQLAlchemy to define the following models:
 
